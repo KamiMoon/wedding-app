@@ -4,7 +4,7 @@ import Layout from "../../client/components/layout/Layout";
 
 function withAuth(WrappedComponent: any) {
   return (props: any) => {
-    const [session, loading] = useSession();
+    const [session] = useSession();
 
     if (!session) {
       return (
