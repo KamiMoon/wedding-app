@@ -1,24 +1,17 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import dbConnect from "../../../server/data/mongo/dbConnect";
 import User from "../../../server/data/mongo/models/User";
-// import { sampleUserData } from "../../../server/data/sample-data";
-
-// const handler = (_req: NextApiRequest, res: NextApiResponse) => {
-//   try {
-//     if (!Array.isArray(sampleUserData)) {
-//       throw new Error("Cannot find user data");
-//     }
-
-//     res.status(200).json(sampleUserData);
-//   } catch (err) {
-//     res.status(500).json({ statusCode: 500, message: err.message });
-//   }
-// };
+import { getSession } from "next-auth/client";
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
+  const session = await getSession({ req });
+  if (!session) {
+    return res.status(401).json({ error: "Not Authorized" });
+  }
+
   const { method } = req;
 
   await dbConnect();

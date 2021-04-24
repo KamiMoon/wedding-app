@@ -1,11 +1,17 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import dbConnect from "../../../server/data/mongo/dbConnect";
 import User from "../../../server/data/mongo/models/User";
+import { getSession } from "next-auth/client";
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
+  const session = await getSession({ req });
+  if (!session) {
+    return res.status(401).json({ error: "Not Authorized" });
+  }
+
   const {
     query: { id },
     method,
