@@ -50,6 +50,7 @@ Deploy by pushing to the main branch.
 
 - client: React client UI code
   - components: Reusable UI components
+  - styles: CSS
   - main: Components for homepage/top level
 - pages: Next.js pages that map as routes such as /about and /users
   - api: API and serverless functions
