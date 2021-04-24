@@ -1,11 +1,10 @@
 import { GetStaticProps, GetStaticPaths } from "next";
 
-import { User } from "../../shared/models/user";
 import Layout from "../../client/components/layout/Layout";
 import ListDetail from "../../client/main/ListDetail";
 
 type Props = {
-  id?: string;
+  id: string;
 };
 
 const UserDetailPage = ({ id }: Props) => {
