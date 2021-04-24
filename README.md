@@ -56,3 +56,8 @@ Deploy by pushing to the main branch.
   - api: API and serverless functions
 - public: Static hosting of files
 - shared: Code that might be shared between client and server
+
+## TODO
+
+- styling
+- tests
