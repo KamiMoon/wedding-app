@@ -5,7 +5,7 @@ import Date from "../client/components/utils/Date";
 const now = "2021-04-14";
 
 const AboutPage = () => (
-  <Layout title="About | Next.js + TypeScript Example">
+  <Layout title="About">
     <h1>About</h1>
     <p>This is the about page</p>
     <p>
