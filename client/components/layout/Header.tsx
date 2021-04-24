@@ -15,7 +15,10 @@ export default function Header() {
         <Link href="/users">
           <a>Users List</a>
         </Link>{" "}
-        | <a href="/api/users">Users API</a>
+        |{" "}
+        <Link href="/wedding/guests">
+          <a>Guest List</a>
+        </Link>{" "}
       </nav>
     </header>
   );

@@ -63,3 +63,8 @@ Deploy by pushing to the main branch.
 
 - styling
 - tests
+
+## User stories
+
+- A user can create a Wedding
+- A user can create a guest list for their Wedding and manage users

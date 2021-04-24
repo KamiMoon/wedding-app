@@ -1,5 +1,5 @@
-import { WeddingRegistry } from "./WeddingRegistry";
+import { GuestList } from "./GuestList";
 
 export class Wedding {
-  registry!: WeddingRegistry;
+  guests!: GuestList;
 }

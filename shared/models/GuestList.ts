@@ -1,5 +1,5 @@
 import { User } from "./User";
 
-export class WeddingRegistry {
+export class GuestList {
   guests!: Array<User>;
 }
