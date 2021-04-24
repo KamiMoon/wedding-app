@@ -27,7 +27,7 @@ export default async function handler(
     case "GET":
       try {
         const users = await User.find({}); /* find all */
-        res.status(200).json({ success: true, data: users });
+        res.status(200).json({ users });
       } catch (error) {
         res.status(400).json({ success: false });
       }
