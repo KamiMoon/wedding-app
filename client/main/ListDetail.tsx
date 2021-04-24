@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { User } from "../../interfaces";
+import { User } from "../../shared/models/user";
 
 type ListDetailProps = {
   item: User;
@@ -8,7 +8,7 @@ type ListDetailProps = {
 
 const ListDetail = ({ item: user }: ListDetailProps) => (
   <div>
-    <h1>Detail for {user.name}</h1>
+    <h1>Detail for {user.firstName}</h1>
     <p>ID: {user.id}</p>
   </div>
 );

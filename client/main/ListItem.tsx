@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-import { User } from "../../interfaces";
+import { User } from "../../shared/models/user";
 
 type Props = {
   data: User;
@@ -10,7 +10,7 @@ type Props = {
 const ListItem = ({ data }: Props) => (
   <Link href="/users/[id]" as={`/users/${data.id}`}>
     <a>
-      {data.id}: {data.name}
+      {data.id}: {data.firstName}
     </a>
   </Link>
 );
