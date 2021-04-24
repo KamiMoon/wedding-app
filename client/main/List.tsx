@@ -1,5 +1,5 @@
 import ListItem from "./ListItem";
-import { User } from "../../shared/models/User";
+import { User } from "../../shared/models/user";
 
 type Props = {
   items: User[];

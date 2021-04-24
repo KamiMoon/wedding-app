@@ -1,4 +1,4 @@
-import { User } from "../../../shared/models/User";
+import { User } from "../../../shared/models/user";
 import GuestListItem from "./GuestListItem";
 
 type Props = {

@@ -1,4 +1,4 @@
-import { User } from "../../shared/models/User";
+import { User } from "../../shared/models/user";
 
 type ListDetailProps = {
   item: User;

@@ -8,4 +8,5 @@ export class User {
   city?: string;
   st?: string;
   zip?: string;
+  image?: string;
 }

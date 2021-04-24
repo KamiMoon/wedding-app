@@ -2,7 +2,7 @@ import withAuth from "../../client/auth/withAuth";
 
 import { GetStaticProps } from "next";
 import { sampleUserData } from "../../server/data/sample-data";
-import { User } from "../../shared/models/User";
+import { User } from "../../shared/models/user";
 
 import Layout from "../../client/components/layout/Layout";
 import GuestList from "../../client/wedding/guests/GuestList";
