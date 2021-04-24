@@ -2,7 +2,7 @@ import { GetStaticProps, GetStaticPaths } from "next";
 
 import { User } from "../../interfaces";
 import { sampleUserData } from "../../server/data/sample-data";
-import Layout from "../../client/components/Layout";
+import Layout from "../../client/components/layout/Layout";
 import ListDetail from "../../client/main/ListDetail";
 
 type Props = {
