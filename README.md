@@ -42,6 +42,16 @@ A `type-check` script is also added to `package.json`, which runs TypeScript's `
 
 ## Environments
 
--Dev: https://wedding-app-seven.vercel.app/
+- Dev: https://wedding-app-seven.vercel.app/
 
 Deploy by pushing to the main branch.
+
+## Project Stucture
+
+- client: React client UI code
+  - components: Reusable UI components
+  - main: Components for homepage/top level
+- pages: Next.js pages that map as routes such as /about and /users
+  - api: API and serverless functions
+- public: Static hosting of files
+- shared: Code that might be shared between client and server

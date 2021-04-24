@@ -1,0 +1,6 @@
+# robotstxt.org
+
+User-agent: *
+
+
+Sitemap: https://www.erickizaki.com//sitemap.xml
