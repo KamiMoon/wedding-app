@@ -1,6 +1,6 @@
 import * as React from "react";
 import ListItem from "./ListItem";
-import { User } from "../../shared/models/user";
+import { User } from "../../shared/models/User";
 
 type Props = {
   items: User[];

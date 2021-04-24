@@ -1,4 +1,4 @@
-import { User } from "../../shared/models/user";
+import { User } from "../../shared/models/User";
 
 /** Dummy user data. */
 export const sampleUserData: User[] = [

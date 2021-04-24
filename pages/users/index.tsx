@@ -1,7 +1,7 @@
 import { GetStaticProps } from "next";
 import Link from "next/link";
 
-import { User } from "../../shared/models/user";
+import { User } from "../../shared/models/User";
 import { sampleUserData } from "../../server/data/sample-data";
 import Layout from "../../client/components/layout/Layout";
 import List from "../../client/main/List";

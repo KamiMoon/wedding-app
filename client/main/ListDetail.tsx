@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { User } from "../../shared/models/user";
+import { User } from "../../shared/models/User";
 
 type ListDetailProps = {
   item: User;

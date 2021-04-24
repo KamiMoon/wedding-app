@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-import { User } from "../../shared/models/user";
+import { User } from "../../shared/models/User";
 
 type Props = {
   data: User;

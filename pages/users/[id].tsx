@@ -1,6 +1,6 @@
 import { GetStaticProps, GetStaticPaths } from "next";
 
-import { User } from "../../shared/models/user";
+import { User } from "../../shared/models/User";
 import { sampleUserData } from "../../server/data/sample-data";
 import Layout from "../../client/components/layout/Layout";
 import ListDetail from "../../client/main/ListDetail";
