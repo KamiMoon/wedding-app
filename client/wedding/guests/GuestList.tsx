@@ -1,11 +1,18 @@
-function GuestList() {
-  return (
-    <div>
-      <h2>Wedding Guest List</h2>
+import { User } from "../../../shared/models/User";
+import GuestListItem from "./GuestListItem";
 
-      <button>Add Guest</button>
-    </div>
-  );
-}
+type Props = {
+  guests: User[];
+};
+
+const GuestList = ({ guests }: Props) => (
+  <ul>
+    {guests.map((guest) => (
+      <li key={guest.id}>
+        <GuestListItem guest={guest}></GuestListItem>
+      </li>
+    ))}
+  </ul>
+);
 
 export default GuestList;
