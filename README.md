@@ -43,3 +43,5 @@ A `type-check` script is also added to `package.json`, which runs TypeScript's `
 ## Environments
 
 -Dev: https://wedding-app-seven.vercel.app/
+
+Deploy by pushing to the main branch.
